@@ -1,64 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
-#q4Wrapper {
+#layout {
   background-color: #2A3035;
   font-family: "Roboto", sans-serif;
   color: white;
 }
-#q4Wrapper h1, #q4Wrapper h3 {
+
+#layout h1, #layout h3 {
   margin: 0;
 }
-#q4Wrapper h1 {
+#layout h1 {
   font-size: 48px;
 }
-#q4Wrapper h3 {
+#layout h3 {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
-#q4Wrapper header, #q4Wrapper footer {
+#layout header, #layout footer {
   background-color: #22272B;
 }
-#q4Wrapper header {
+#layout header {
   padding: 20px;
 }
-#q4Wrapper footer {
+#layout footer {
   margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
 }
-#q4Wrapper article {
+#layout article {
   text-align: center;
 }
-#q4Wrapper article img {
+#layout article img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
-#q4Wrapper a {
+#layout a {
   display: inline-block;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease;
 }
-#q4Wrapper a:hover {
+#layout a:hover {
   transform: scale(1.05);
 }
-#q4Wrapper a span {
+#layout a span {
   opacity: 0.5;
 }
 
+
 .layout_inner {
   max-width: 960px;
-  margin: 0 auto;
-  padding: 30px 20px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 .layout_header {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   text-align: center;
+  border: solid #23272a 5px;
+  background-color: #23272a;
+  color: white;
 }
+
+
 
 /* Begin styling the report items here! */
 .reports {
+display: grid;
+gap: 50px;
+grid-gap: 50px;
+grid-auto-rows: 22rem;
+grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+align-items: center;
+text-align: center;
+align-content: center;
+}
 
+.reports_item {
+  margin-bottom: 60px;
 }
